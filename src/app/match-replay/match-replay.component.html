@@ -2,4 +2,7 @@
 
 <div *ngIf="match">
   <h3>{{ match.id }}</h3>
+  <div *ngIf="replayData">
+    <p>{{ replayData | async }}</p>
+  </div>
 </div>
