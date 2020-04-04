@@ -1,9 +1,8 @@
 <h2>Match Replay</h2>
 
 <div *ngIf="match">
-  <h3>{{ match.id }}</h3>
-  <div class="shipping-item" *ngIf="replayData | async as data; else loading">
-    Hello {{data|json}}!
+  <div class="replay" *ngIf="replayData | async as data; else loading">
+    <h3>{{ data.header.map }}</h3>
   </div>
-  <ng-template #loading let-user>Waiting... (user is {{data|json}})</ng-template>
+  <ng-template #loading let-user>Loading data...</ng-template>
 </div>
