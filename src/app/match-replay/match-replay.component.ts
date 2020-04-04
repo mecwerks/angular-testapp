@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AnimationPlayer } from '@angular/animations';
 
 import { MatchdataService } from '../matchdata.service';
 import { matches } from '../matches';
@@ -12,6 +13,8 @@ import { matches } from '../matches';
 export class MatchReplayComponent implements OnInit {
   match;
   replayData;
+
+  private player: AnimationPlayer;
 
   constructor(
     private route: ActivatedRoute,
