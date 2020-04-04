@@ -26,4 +26,11 @@ export class MatchReplayComponent implements OnInit {
     this.replayData = this.matchdataService.getReplayData(this.match.id);
   }
 
+  log(temp) { 
+    console.log(temp)
+  }
+
+  stringy(temp) {
+    return JSON.stringify(temp);
+  }
 }
