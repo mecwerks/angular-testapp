@@ -9,6 +9,6 @@ export class MatchdataService {
   ) { }
 
   getReplayData(matchid) {
-    return this.http.get(`/assets/replays/${matchid}.json`);
+    return this.http.get(`/assets/replays/test.json`);
   }
 }
