@@ -10,6 +10,6 @@ export class MatchdataService {
 
   getReplayData(matchid) {
     //return this.http.get(`/assets/shipping.json`);
-    return this.http.get(`https://raw.githubusercontent.com/mecwerks/angular-testapp/master/src/assets/replays/${matchid}.json`)
+    return this.http.get(`https://raw.githubusercontent.com/mecwerks/angular-testapp/master/src/assets/replays/${matchid}.json`);
   }
 }
